@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* Nav Section */
+body {
+    margin: 0;
+    background-color: rgb(25, 20, 20);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav img {
+    height: 60px;
+    width: 60px;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+li a:hover {
+    color: rgb(30, 215, 96);
+}
+
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+}
+
+/* Main Section */
+#download {
+    background-color: inherit;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+#download h1, #download h2 {
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+#download button {
+    background-color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 35px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#download button:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 650px) {
+    #download button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #download h1, #download h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Table Section */
+#difference-table {
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+    padding: 20px;
+}
+
+#difference-table table {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+table th, table td {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+table td {
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+.fa-circle-check, .fa-circle-xmark {
+    font-size: 24px;
+}
+
+#difference-table h1 {
+    padding: 0 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#difference-table button {
+    background-color: rgb(25, 20, 20);
+    padding: 12px 40px;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease-in-out;
+}
+
+#difference-table button:hover {
+    transform: scale(1.02);
+}
+
+/* Article Section */
+#premium {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+.price-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+     /* Note: 'space-around' is a value for justify-content, not align-items */
+    justify-content: space-around;;
+    gap: 20px;
+    padding: 20px;
+}
+
+.price-cards > article {
+    flex: 1 1 300px; /* Responsive flex-basis, with a minimum width of 300px */
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(170, 170, 170);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+article button {
+    background-color: rgb(25, 20, 20);
+    padding: 12px 40px;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+@media (max-width: 650px) {
+    .price-cards {
+        flex-direction: column;
+    }
+}
+
+/* Form Section */
+#students-offer {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+#students-offer button {
+    background-color: rgb(255, 255, 255);
+    padding: 12px 40px;
+    font-family: inherit;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(25, 20, 20);
+    transition: transform 0.3s ease-in-out;
+}
+
+#students-offer button:hover {
+    transform: scale(1.02);
+}
+
+form {
+    margin-top: 20px;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    border-radius: 5px;
+    border: 1px solid rgb(170, 170, 170);
+}
+
+input:focus, select:focus {
+    border-color: rgb(30, 215, 96);
+}
+
+form button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(25, 20, 20);
+    padding: 12px 20px;
+    font-family: inherit;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease-in-out;
+}
+
+form button:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 650px) {
+    form {
+        padding: 20px;
+    }
+
+    input, select, form button {
+        font-size: 1rem;
+    }
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 20, 20);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+footer i {
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+footer i:hover {
+    color: rgb(30, 215, 96);
+}
+
+footer p {
+    color: rgb(170, 170, 170);
+    margin: 0;
+}
+
+@media (max-width: 650px) {
+    footer {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
